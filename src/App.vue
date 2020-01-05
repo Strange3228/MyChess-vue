@@ -1,32 +1,73 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+<div class="app">
+  <SideMenu v-if="isOpen" class="sideMenu">
+  </SideMenu>
+  <div class="container">
+    <NavBar/>
+    <div class="desk-container">
+      <router-view />
     </div>
-    <router-view/>
   </div>
+  <button @click="closeSide" class="button sideMenuButton">Click</button>
+</div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import NavBar from '@/components/NavBar.vue'
+import SideMenu from '@/components/SideMenu.vue'
+import { mapState } from 'vuex'
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  name: 'app',
+  data () {
+    return {
+      isOpen: false
+    }
+  },
+  computed: {
+    ...mapState(['grosmasters'])
+  },
+  components: {
+    NavBar,
+    SideMenu
+  },
+  methods: {
+    closeSide () {
+      this.isOpen = !this.isOpen
     }
   }
+}
+</script>
+
+<style lang="scss">
+html{
+  min-height: 100%;
+}
+.app{
+  background-image: url("https://ak7.picdn.net/shutterstock/videos/13430837/thumb/1.jpg");
+  background-size: cover;
+}
+.container{
+  width: 60%;
+}
+.desk-container{
+  display: flex;
+  justify-content: center;
+}
+</style>
+
+<style scoped>
+.sideMenu{
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+.sideMenuButton{
+  position:fixed;
+  top: 0;
+  left: 0;
+  border:3px;
+  border-radius: 123;
+  z-index: 100;
 }
 </style>
