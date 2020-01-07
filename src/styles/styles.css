@@ -1,0 +1,119 @@
+.piece{
+    position: relative;
+    margin: 0;
+    width: 12.5%;
+    height: 12.5%;
+  }
+.peshkaWhite{
+    background-image: url("../assets/PeshkaWhite.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .peshkaBlack{
+    background-image: url("../assets/PeshkaBlack.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .ferzBlack{
+    background-image: url("../assets/FerzBlack.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .horseBlack{
+    background-image: url("../assets/HorseBlack.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .kingBlack{
+    background-image: url("../assets/KingBlack.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .queenBlack{
+    background-image: url("../assets/QueenBlack.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .slonBlack{
+    background-image: url("../assets/SlonBlack.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .ferzWhite{
+    background-image: url("../assets/FerzWhite.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .horseWhite{
+    background-image: url("../assets/HorseWhite.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .kingWhite{
+    background-image: url("../assets/KingWhite.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .queenWhite{
+    background-image: url("../assets/QueenWhite.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .slonWhite{
+    background-image: url("../assets/SlonWhite.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .destroyed1{
+    transition: 1.5s;
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  .destroyed2{
+      transition: 1.5s;
+      transform: translate(400%, 400%);
+      opacity: 0;
+  }
+  .turn1{
+    transition: 1.5s;
+    transform: translateY(-200%);
+  }
+  .turn2{
+    transition: 1.5s;
+    transform: translateY(200%);
+  }
+  .turn3{
+    transition: 1.5s;
+    transform: translateY(-100%);
+  }
+  .turn4{
+    transition: 1.5s;
+    transform: translateY(100%);
+  }
+  .turn5{
+    transition: 1.5s;
+    transform: translateY(-200%);
+  }
+  .turn6{
+    transition: 1.5s;
+    transform: translate(-200%, 200%)
+  }
+  .turn7{
+    transition: 1.5s;
+    transform: translateY(-200%);
+  }
+  .turn8{
+    transition: 1.5s;
+    transform: translate(400%, 400%);
+  }
+  .turn9{
+    transition: 1.5s;
+    transform: translateY(-300%);
+  }
+  .turn10{
+    transition: 1.5s;
+    transform: translate(100%, 500%);
+  }
+  .defeated{
+      border: solid 3px red;
+  }

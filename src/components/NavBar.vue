@@ -3,14 +3,14 @@
         <template slot="brand">
             <b-navbar-item tag="router-link" to="/">
                 <img class=""
-                    src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Chess_kdt60.png"
+                    src="../assets/QueenWhite.png"
                     alt="Logo MyChess"
                 >
             </b-navbar-item>
         </template>
         <template slot="start">
-            <b-navbar-item tag="router-link" to="/test">
-                Famous chess Masters
+            <b-navbar-item tag="router-link" to="/strategies">
+                Example of chess Opening Move
             </b-navbar-item>
             <b-navbar-item>
                 |
@@ -42,7 +42,7 @@ export default {
 <style scoped>
 .navbar{
   margin-bottom:40px;
-  background-color: rgb(201, 192, 192);
+  background-color: rgba(201, 192, 192, 0);
 }
 *:hover{
     background-color: transparent !important;

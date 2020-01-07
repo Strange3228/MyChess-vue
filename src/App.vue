@@ -40,8 +40,8 @@ export default {
 </script>
 
 <style lang="scss">
-html{
-  min-height: 100%;
+html, body{
+  height: 100%;
 }
 .app{
   background-image: url("https://ak7.picdn.net/shutterstock/videos/13430837/thumb/1.jpg");

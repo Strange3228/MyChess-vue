@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Choose from '../views/Choose.vue'
+import Strategies from '../views/Strategies.vue'
+import StrTurn1 from '../views/StrTurn1'
 
 Vue.use(VueRouter)
 
@@ -12,9 +13,14 @@ const routes = [
     component: Home
   },
   {
-    path: '/test',
-    name: 'choose',
-    component: Choose
+    path: '/strategies',
+    name: 'strategies',
+    component: Strategies
+  },
+  {
+    path: '/turn1',
+    name: 'turn1',
+    component: StrTurn1
   }
 ]
 
